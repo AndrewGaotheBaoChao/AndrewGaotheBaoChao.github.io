@@ -1,11 +1,13 @@
 body, html {
   height:100%;
   margin:0;
-  font-size:16px;
+  font-size:20px;
   font-family:"Nexa", sans-serif;
   font-weight:400;
   line-height:1.8em;
   color:#ffffff;
+  overflow-x: hidden;
+  overflow-y: hidden; <!-- This is just temporary until I finish up the site :) -->
 }
 
 .pimg1, .pimg2, .pimg3 {
@@ -23,7 +25,7 @@ body, html {
 
 .pimg1 {
   background-image:url('../img/image1.jpg');
-  min-height:100%;
+  min-height:940px;
 }
 
 .pimg2 {
@@ -44,16 +46,18 @@ body, html {
 .section-light {
   background-color:#f4f4f4;
   color:#666;
+  height:1000px;
 }
 
 .section-dark {
   background-color:#282e34;
   color:#ddd;
+  height:1000px;
 }
 
 p1 {
   position:absolute;
-  top:47%;
+  top:45%;
   width:100%;
   text-align:center;
   color:#ffffff;
@@ -62,7 +66,7 @@ p1 {
 
 p2 {
   position:absolute;
-  top:55%;
+  top:53%;
   width:100%;
   font-weight: bold;
   text-align:center;
@@ -70,9 +74,36 @@ p2 {
   font-size:78px;
 }
 
+p3 {
+  position:absolute;
+  top:70%;
+  width:100%;
+  text-align:center;
+  color:#ffffff;
+  font-size:54px;
+}
 
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+@media(max-width:568px) {
+  .pimg1, .pimg2, .pimg3 {
     background-attachment:scroll;
   }
+}
+
+.fa {
+  position:absolute;
+  bottom:0%;
+  width:100%;
+  padding: 7px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-github {
+  background: #333;
+  color: white;
 }
