@@ -1,0 +1,127 @@
+body, html {
+  height:100%;
+  width: 100%;
+  margin: 0;
+  font-size:20px;
+  font-family:"Nexa", sans-serif;
+  font-weight:400;
+  color:#ffffff;
+  overflow-x: hidden;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.pimg1, .pimg2, .pimg3 {
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1 {
+  background-image:url('../img/image1.jpg');
+  min-height:100%;
+}
+
+.pimg2 {
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3 {
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+.section {
+  text-align:center;
+  padding:50px 80px;
+}
+
+.about {
+  background-color:#f4f4f4;
+  color:#666;
+  height:500px;
+}
+
+.aboutText {
+  font-family: Nexa;
+  color: #000000;
+  font-size: 33.33px; /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: center;
+}
+.stuff {
+  background-color:#f4f4f4;
+  color:#ddd;
+  height:500px;
+}
+.stuffText {
+  font-family: Nexa;
+  color: #000000;
+  font-size: 33.33px; /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: center;
+}
+.contact {
+  background-color:#f4f4f4;
+  color:#ddd;
+  height:500px;
+}
+.logoText {
+  font-family: Nexa;
+  color: #000000;
+  font-size: 33.33px; /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: center;
+}
+
+p1 {
+  position:absolute;
+  top:45%;
+  width:100%;
+  text-align:center;
+  color:#ffffff;
+  font-size:54px;
+}
+
+p2 {
+  position:absolute;
+  top:53%;
+  width:100%;
+  font-weight: bold;
+  text-align:center;
+  color:#ffffff;
+  font-size:78px;
+}
+
+p3 {
+  position:absolute;
+  top:70%;
+  width:100%;
+  text-align:center;
+  color:#ffffff;
+  font-size:54px;
+}
+
+h1 {
+  font-family: Nexa;
+  color: #000000;
+  font-size: 66.67px; /* Approximation due to font substitution */
+  font-weight: bold;
+  text-align:center;
+}
+
+@media(max-width:568px) {
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment:scroll;
+  }
+}
